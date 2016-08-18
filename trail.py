@@ -10,3 +10,6 @@ going()
 
 role,bank = characters()
 
+from general_store import shop
+
+shop()
