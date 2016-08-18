@@ -1,7 +1,9 @@
 
 #Store function
 
-store = {
+def shop():
+
+	store = {
 	'oxen':(40,'yoke'),
 	'food':(.20, 'lb'),
 	'clothing':(10,'set'),
@@ -9,18 +11,17 @@ store = {
 	'spare parts':(10, 'part')
 	}
 
-supplies = {
+	supplies = {
 	'oxen':[0, 'yokes'],
 	'food':[0, 'lbs'],
 	'clothing':[0,'sets'],
 	'ammunition':[0,'boxes'],
 	'spare parts':[0, 'parts']
-}
+	}	
 
-start_money = 1600
-
-def shop():
+	start_money = 1600
 	end_money = start_money
+	
 	print('Welcome to the GENERAL STORE!\n\nInventory:\n----------')
 	for i in store: #prints the store's inventory
 		print('+ {}'.format(i.capitalize()))
@@ -44,5 +45,3 @@ def shop():
 				for i in supplies:#iterates over and prints each item in the user's inventory
 					print('{} - {} {}'.format(i.capitalize(), supplies[i][0], supplies[i][1]))
 				return
-
-shop()
