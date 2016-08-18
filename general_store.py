@@ -20,8 +20,8 @@ def shop():
 	}	
 
 	start_money = 1600
-
 	end_money = start_money
+	
 	print('Welcome to the GENERAL STORE!\n\nInventory:\n----------')
 	for i in store: #prints the store's inventory
 		print('+ {}'.format(i.capitalize()))
