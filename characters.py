@@ -18,5 +18,4 @@ What is your choice? ''')
         return 'Farmer',400
     else:
         print ('Please choose 1, 2 or 3.')
-        characters():
-
+        characters()

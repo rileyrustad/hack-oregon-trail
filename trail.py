@@ -1,3 +1,4 @@
+
 from intro import intro, management_options
 from players import player_name
 from month import going
@@ -13,10 +14,9 @@ going()
 
 role,bank = characters()
 
-shop()
+shop(bank)
 
 
 river_cross()
 
 animal_generator()
-

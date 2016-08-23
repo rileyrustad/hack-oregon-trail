@@ -1,7 +1,7 @@
 
 #Store function
 
-def shop():
+def shop(bank):
 
 	store = {
 	'oxen':(40,'yoke'),
@@ -18,9 +18,8 @@ def shop():
 	'ammunition':[0,'boxes'],
 	'spare parts':[0, 'parts']
 	}	
-
-	start_money = 1600
-	end_money = start_money
+	
+	end_money = bank
 	
 	print('Welcome to the GENERAL STORE!\n\nInventory:\n----------')
 	for i in store: #prints the store's inventory
@@ -37,11 +36,11 @@ def shop():
 				total = 0
 				for each in supplies: #for loop recalculates how much money is left
 					total += supplies[each][0]*store[each][0]
-				end_money=start_money-total
+				end_money=bank-total
 			else:
 				print("\nSorry, you don't have enough money.\n")
 		elif buy.lower() == 'e':
 				print('\nThanks for shopping at the GENERAL STORE!\nRemaining cash: ${}\nSupplies:'.format(end_money))#prints how much money is left
 				for i in supplies:#iterates over and prints each item in the user's inventory
 					print('{} - {} {}'.format(i.capitalize(), supplies[i][0], supplies[i][1]))
-				return
+				return supplies
