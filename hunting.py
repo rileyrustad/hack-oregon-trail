@@ -64,13 +64,13 @@ def attack(animal):
     print(statement)
     if animal == "squirrel":
         print("You've lost 1 point of health!")
-        player['health'] += 1
+        player['health'] -= 1
     elif animal == "rabbit":
         print("You've lost 5 points of health!")
-        player['health'] += 5
+        player['health'] -= 5
     elif animal == "deer":
         print("You've lost 80 points of health!")
-        player['health'] += 80
+        player['health'] -= 80
     else:
         print("You've lost 800 points of health!")
-        player['health'] += 800
+        player['health'] -= 800
