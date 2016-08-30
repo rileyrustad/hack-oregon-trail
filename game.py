@@ -370,7 +370,7 @@ def attack(animal):
         print("You've lost 800 points of health!")
         player['health'] += 800
 
-if __name__ == "__main___":
+if __name__ == "__main__":
     intro()
     player_name()
 
