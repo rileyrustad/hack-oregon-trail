@@ -369,3 +369,17 @@ def attack(animal):
     else:
         print("You've lost 800 points of health!")
         player['health'] += 800
+
+if __name__ == "__main___":
+    intro()
+    player_name()
+
+    going()
+
+    role, bank = characters()
+
+    shop()
+
+    river_cross()
+
+    animal_generator()
