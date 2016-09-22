@@ -280,27 +280,27 @@ You have a {}% chance of crossing successfully.'''.format(depth,width,success))
             print('\nPlease choose 1, 2, or 3.\n')
             choice = input()
         if choice == '1':
-        	print('\nYou attempt to ford the river...\n')
-        	if (success) <= (chance):
-        		print('\nYou have successfully navigated the river without incident!\n')
-        		return True
-        	else:
-        		print('\nYour river crossing was not a success.\n')
-        		return False
+            print('\nYou attempt to ford the river...\n')
+            if (success) <= (chance):
+                print('\nYou have successfully navigated the river without incident!\n')
+                return True
+            else:
+                print('\nYour river crossing was not a success.\n')
+                return False
         elif choice == '2':
-        	# day = day +1
-        	print('\nYou spend a day caulking the wagon and attempt to float accross...\n')
-        	(success)=((success)*2)
-        	if (success) <= (chance):
-        		print('\nYou are able to float accross the river safely.\n')
-        		return True
-        	else:
-        		print('\nYour river crossing was not a success\n')
-        		return False
+            # day = day +1
+            print('\nYou spend a day caulking the wagon and attempt to float accross...\n')
+            (success)=((success)*2)
+            if (success) <= (chance):
+                print('\nYou are able to float accross the river safely.\n')
+                return True
+            else:
+                print('\nYour river crossing was not a success\n')
+                return False
         elif choice == '3':
-        	# day = day +1
-        	print('\nYou wait a day to see if conditions improve.\n')
-        	return self.river_cross()
+            # day = day +1
+            print('\nYou wait a day to see if conditions improve.\n')
+            return self.river_cross()
 
 
 def animal_generator():
